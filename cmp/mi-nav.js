@@ -13,6 +13,9 @@ class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <a class="navbar-brand" href="index.html">
+        &nbsp;<span class="spanExproyActual">Joel Reyes Vicencio</span>
+      </a>
         <div id="divMenuColapsable" class="navbar-collapse collapse" style="">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
