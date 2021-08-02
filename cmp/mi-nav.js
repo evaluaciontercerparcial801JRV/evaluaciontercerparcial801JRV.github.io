@@ -65,7 +65,13 @@ class MiNav extends HTMLElement {
                 <a class="nav-link" href=
           "usuarios.html" target="_top">Usuarios</a>
               </li>
-              <button type="button" onclick="terminaSesión()">Terminar Sesión</button>`;
+              <div class="herramientas">
+        <button
+          type="button" class="btn btn-warning btn-lg btn-block"
+          name="terminarSesión">
+          Terminar Sesión
+        </button>
+      </div>`;
           }
           this.ul.innerHTML += html;
         }
