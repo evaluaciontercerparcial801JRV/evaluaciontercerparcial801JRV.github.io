@@ -13,12 +13,13 @@ class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <ul>
-          <li>
-            <a href="index.html">
-              Sesion</a>
-          </li>
-        </ul></nav>`;
+        <div id="divMenuColapsable" class="navbar-collapse collapse" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" target="_top">
+                Sesion</a>
+            </li>
+          </ul></div></nav>`;
     this.ul =
       this.querySelector("ul");
     getAuth().onAuthStateChanged(
