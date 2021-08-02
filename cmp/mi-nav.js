@@ -14,7 +14,7 @@ class MiNav extends HTMLElement {
     this.innerHTML = /* html */
       `<nav class="navbar navbar-expand-lg navbar-white bg-white">
         <div id="divMenuColapsable" class="navbar-collapse collapse" style="">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html" target="_top">
                 Sesión</a>
