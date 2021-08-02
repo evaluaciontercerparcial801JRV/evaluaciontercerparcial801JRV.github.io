@@ -15,7 +15,7 @@ class MiNav extends HTMLElement {
       `<header id="header">
           <div class="container-fluid">
             <div id="logo" class="pull-left">
-              <h1>Joel Reyes Vicencio</a></h1>
+              <h1 class="scrollto">Joel Reyes Vicencio</a></h1>
             </div>
             <nav id="nav-menu-container">
               <ul class="nav-menu">
