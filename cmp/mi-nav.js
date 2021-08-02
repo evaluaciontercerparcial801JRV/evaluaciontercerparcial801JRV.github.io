@@ -12,17 +12,18 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<nav class="navbar navbar-expand-lg navbar-black bg-black">
-      <a class="navbar-brand" href="index.html">
-        &nbsp;<span class="spanExproyActual">Joel Reyes Vicencio</span>
-      </a>
-        <div id="divMenuColapsable" class="navbar-collapse collapse" style="">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" target="_top">
-                Sesión</a>
-            </li>
-          </ul></div></nav>`;
+      `<header id="header">
+          <div class="container-fluid">
+            <div id="logo" class="pull-left">
+              <h1>Joel Reyes Vicencio</a></h1>
+            </div>
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                <li class="menu-active"><a href="index.html">Sesión</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>`;
     this.ul =
       this.querySelector("ul");
     getAuth().onAuthStateChanged(
@@ -45,10 +46,9 @@ class MiNav extends HTMLElement {
            * para clientes. */
           if (roles.has("Cliente")) {
             html += /* html */
-              `<li class="nav-item">
-                <a class="nav-link" href=
-                  "chat.html" target="_top">Chat</a>
-              </li>`;
+              `<li class="menu-active">
+                <a href="chat.html">Chat</a>
+               </li>`;
           }
           /* Enlaces para solo
            * administradores.
@@ -56,14 +56,11 @@ class MiNav extends HTMLElement {
           if (roles.has(
             "Administrador")) {
             html += /* html */
-              `<li>
-                <a class="nav-link" href=
-    "alumnos.html" target="_top">Alumnos</a>
+              `<li class="menu-active">
+                <a href="alumnos.html">Alumnos</a>
               </li>
-              
-              <li>
-                <a class="nav-link" href=
-          "usuarios.html" target="_top">Usuarios</a>
+              <li class="menu-active">
+                <a href="usuarios.html">Usuarios</a>
               </li>`;
           }
           this.ul.innerHTML += html;
