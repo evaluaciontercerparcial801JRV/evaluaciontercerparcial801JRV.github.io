@@ -14,9 +14,6 @@ class MiNav extends HTMLElement {
     this.innerHTML = /* html */
       `<header id="header">
           <div class="container-fluid">
-            <div id="logo" class="pull-left">
-              <h1 class="scrollto">Joel Reyes Vicencio</a></h1>
-            </div>
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li class="menu-active"><a href="index.html">Sesión</a></li>
