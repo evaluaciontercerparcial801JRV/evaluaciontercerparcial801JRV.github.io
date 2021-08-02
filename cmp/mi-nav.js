@@ -12,7 +12,7 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<nav class="navbar navbar-expand-lg navbar-white bg-white">
+      `<nav class="navbar navbar-expand-lg navbar-black bg-black">
       <a class="navbar-brand" href="index.html">
         &nbsp;<span class="spanExproyActual">Joel Reyes Vicencio</span>
       </a>
