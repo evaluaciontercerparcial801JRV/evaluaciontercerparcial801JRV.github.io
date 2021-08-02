@@ -17,7 +17,7 @@ class MiNav extends HTMLElement {
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html" target="_top">
-                Sesion</a>
+                Sesión</a>
             </li>
           </ul></div></nav>`;
     this.ul =
