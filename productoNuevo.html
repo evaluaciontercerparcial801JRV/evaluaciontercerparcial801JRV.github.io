@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno Nuevo</title>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="cmp/mi-nav.js"></script>
+    <script type="module" src="cmp/mi-footer.js"></script>
+    <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container my-4">
+      <form name="forma">
+        <mi-nav></mi-nav>
+        <header class="section-header wow fadeInUp mt-5">
+          <h3 class="text-center pt-5 mt-5">Alumno Nuevo</h3>
+          <div class="herramientas text-center">
+            <a href="alumnos.html" class="btn btn-danger"><i class="fas fa-times"></i>&nbsp;&nbsp;Cancelar</a>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
+          </div>
+        </header>
+        <div class="form-group">
+          <label>Matricula:</label>
+          <input name="matricula" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Nombre:</label>
+          <input name="nombre" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Teléfono:</label>
+          <input name="telefono" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Grupo:</label>
+          <input name="grupo" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Grupo:</label>
+          <input name="fecha" class="form-control" type="date" required>
+        </div>
+        <mi-footer></mi-footer>
+      </form>
+    </div>
+
+    <script type="module" src="js/CtrlAlumnoNuevo.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/superfish/hoverIntent.js"></script>
+    <script src="assets/lib/superfish/superfish.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
