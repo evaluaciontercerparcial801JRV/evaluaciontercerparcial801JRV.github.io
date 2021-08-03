@@ -148,7 +148,13 @@ function htmlFila(doc) {
   return ( /* html */
     `<li class="fila">
       <strong class="primario">
+      Correo:
+      </strong>
+      <span class="secundario">
         ${cod(data.usuarioId)}
+      </span>
+      <strong class="primario">
+        Mensaje:
       </strong>
       <span class="secundario">
         ${cod(data.texto)}
