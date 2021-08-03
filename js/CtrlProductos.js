@@ -34,7 +34,7 @@ async function protege(usuario) {
 
 function consulta() {
   daoProducto.
-    orderBy("nombre")
+    orderBy("nombreproducto")
     .onSnapshot(
       htmlLista, errConsulta);
 }
@@ -67,12 +67,9 @@ function htmlFila(doc) {
    * @type {import("./tipos.js").
                   Producto} */
   const data = doc.data();
-  const matricula = cod(data.matricula);
-  const nombre = cod(data.nombre);
-  var fsf= cod(data.fecha);
-  var fecha = new Date(fsf);
-  var espacio="[   -   ]";
-  var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
+  const nombreproducto = cod(data.nombreproducto);
+  const precio = cod(data.precio);
+  const marca = cod(data.marca);
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
@@ -81,7 +78,7 @@ function htmlFila(doc) {
       <a class="fila" href=
   "producto.html?${parámetros}">
         <strong class="primario">
-          ${matricula} ${nombre} ${dformat}
+          ${nombreproducto} ${precio} ${marca}
         </strong>
       </a>
      
@@ -93,4 +90,3 @@ function errConsulta(e) {
   muestraError(e);
   consulta();
 }
-
