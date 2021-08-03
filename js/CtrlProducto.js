@@ -50,7 +50,7 @@ async function busca() {
           import("./tipos.js").
                   Producto} */
       const data = doc.data();
-      forma.nombreproducto.value = data.nombreproducto;
+      forma.nombreproducto.value = data.nombreproducto || "";
       forma.precio.value = data.precio || "";
       forma.cantidad.value = data.cantidad || "";
       forma.marca.value = data.marca || "";
