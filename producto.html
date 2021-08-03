@@ -23,60 +23,56 @@
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+  <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
 </head>
 <body>
   <form name="forma">
     <mi-nav></mi-nav>
-    <header>
-      <h1>Producto</h1>
-      <div class="herramientas">
-        <a href="productos.html">
-          Cancelar</a>
-        <button>Guardar</button>
-        <button name="eliminar"
+    <header class="section-header wow fadeInUp mt-5">
+      <h3 class="text-center pt-5 mt-5">Producto</h3>
+      <div class="herramientas text-center">
+        <a href="productos.html" class="btn btn-danger">
+          <i class="fas fa-times"></i>&nbsp;&nbsp;Cancelar</a>
+        <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
+        <button class="btn btn-warning" name="eliminar"
           type="button">
-          Eliminar
+          <i class="fas fa-trash"></i>&nbsp;&nbsp;Eliminar
         </button>
       </div>
     </header>
-    <p>
-      <label>
-        Nombre Producto
-        <input name="nombreproducto"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Precio
-        <input name="precio"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Cantidad
-        <input name="cantidad"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Marca
-        <input name="marca"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Modelo
-        <input name="nommodelo"
-          type="text" required>
-      </label>
-    </p>
-    
+    <div class="form-group">
+      <label>Nombre Producto:</label>
+      <input name="nombreproducto" type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Precio:</label>
+      <input name="precio" type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Cantidad:</label>
+      <input name="cantidad" type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Marca:</label>
+      <input name="marca" type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Modelo:</label>
+      <input name="nommodelo" class="form-control" type="text" required>
+    </div>
     <mi-footer></mi-footer>
   </form>
   <script type="module"
