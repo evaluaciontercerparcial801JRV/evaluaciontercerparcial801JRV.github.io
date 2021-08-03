@@ -29,55 +29,58 @@
   <script type="module"
     src="cmp/mi-progreso.js">
     </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+  <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
 </head>
 <body>
   <form name="forma">
     <mi-nav></mi-nav>
-    <header>
-      <h1>Usuario Nuevo</h1>
-      <div class="herramientas">
-        <a href="usuarios.html">
-          Cancelar</a>
-        <button type="submit">
-          Guardar
+    <header class="section-header wow fadeInUp mt-5">
+      <h3 class="text-center pt-5 mt-5">Usuario Nuevo</h3>
+      <div class="herramientas text-center">
+        <a href="usuarios.html" class="btn btn-danger"><i class="fas fa-times"></i>&nbsp;&nbsp;Cancelar</a>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar
         </button>
       </div>
     </header>
-    <p>
-      <label>
-        Correo
-        <input name="cue"
-          type="email" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Avatar
-        <input name="avatar"
-          type="file" required
-          accept=".png,.jpg,.jpeg,.gif">
-      </label>
-    </p>
-    <!--
-      Maneja una asociación a uno.
-    -->
-    <p>
-      <label>
-        Producto
-        <select
-          name="productoId">
-          <option>
+    <div class="form-group">
+      <label>Correo:</label>
+      <input name="cue" type="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <div class="custom-file">
+        <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif" required class="custom-file-input">
+        <label class="custom-file-label" >Avatar</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>Producto:</label>
+      <select class="custom-select custom-select-lg mb-3" name="productoId">
+        <option>
             Cargando…
           </option>
-        </select>
-      </label>
-    </p>
+      </select>
+    </div>
+    
+  
     <!--
       Maneja una asociación a
       muchos.
     -->
+    <div class="form-group">
     <fieldset>
       <legend>Roles</legend>
       <ul id="listaRoles"
@@ -88,6 +91,7 @@
         </li>
       </ul>
     </fieldset>
+    </div>
     <mi-footer></mi-footer>
   </form>
   <script type="module"
