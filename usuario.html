@@ -29,32 +29,42 @@
   <script type="module"
     src="cmp/mi-progreso.js">
     </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+  <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
 </head>
 <body>
   <form name="forma">
     <mi-nav></mi-nav>
-    <header>
-      <h1>
+    <header class="section-header wow fadeInUp mt-5">
+      <h3 class="text-center pt-5 mt-5">
         <output name="cue">
           Usuario
           <mi-progreso>
           </mi-progreso>
         </output>
-      </h1>
-      <div class="herramientas">
-        <a href="usuarios.html">
-          Cancelar</a>
-        <button>Guardar</button>
+      </h3>
+      <div class="herramientas text-center">
+        <a href="usuarios.html" class="btn btn-danger"><i class="fas fa-times"></i>&nbsp;&nbsp;Cancelar</a>
+        <button class="btn btn-primary"><i class="fas fa-save"></i>&nbsp;&nbsp;Guardar</button>
         <button name="eliminar"
-          type="button">
-          Eliminar
+          type="button" class="btn btn-warning"><i class="fas fa-trash"></i>&nbsp;&nbsp;Eliminar
         </button>
       </div>
     </header>
     <figure id="figure">
-      <img alt="Falta el Avatar">
+      <img alt="Falta el Avatar" width="400" height="400">
     </figure>
     <p>
       <label>
