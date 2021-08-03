@@ -78,7 +78,7 @@ function htmlFila(doc) {
       <a class="fila" href=
   "producto.html?${parámetros}">
         <strong class="primario">
-          ${nombreproducto} ${precio} ${marca}
+          Nombre del producto: ${nombreproducto} Precio: ${precio} Marca: ${marca}
         </strong>
       </a>
      
