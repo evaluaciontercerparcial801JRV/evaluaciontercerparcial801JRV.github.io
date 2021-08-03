@@ -63,31 +63,27 @@
         </button>
       </div>
     </header>
-    <figure id="figure">
+    <figure id="figure" class="text-center">
       <img alt="Falta el Avatar" width="400" height="400">
     </figure>
-    <p>
-      <label>
-        Avatar
-        <input name="avatar"
-          type="file"
-          accept=".png,.jpg,.jpeg,.gif">
-      </label>
-    </p>
+    
+    
+    <div class="custom-file">
+      <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif" class="custom-file-input">
+      <label class="custom-file-label" >Avatar</label>
+    </div>
+    <div class="form-group">
+      <select class="custom-select custom-select-lg mb-3" name="productoId">
+        <option>
+            Cargando…
+          </option>
+      </select>
+    </div>
+   
     <!--
       Maneja una asociación a uno.
     -->
-    <p>
-      <label>
-        Producto
-        <select
-          name="productoId">
-          <option>
-            Cargando…
-          </option>
-        </select>
-      </label>
-    </p>
+   
     <!--
       Maneja una asociación a
       muchos.
